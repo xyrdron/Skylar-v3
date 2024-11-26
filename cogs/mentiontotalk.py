@@ -56,15 +56,15 @@ class mentiontotalk(commands.Cog):
         response = self.client.chat.completions.create(
         model=model,
         messages=convo,
-        temperature=1.13,
+        temperature=0.7,
         max_tokens=1096,
         top_p=0.56,
         frequency_penalty=0.2,
         presence_penalty=0.42)
 
         # we are not using uwuipy anymore but its here incase yes happens
-        assistantmsg = uwu.uwuify(response.choices[0].message.content)
-        #assistantmsg = response.choices[0].message.content
+        #assistantmsg = uwu.uwuify(response.choices[0].message.content)
+        assistantmsg = response.choices[0].message.content
     except Exception as e:
         logging.error(f"AI Complication Failed: {e}")
         assistantmsg = 'It seems like im having some trouble compiling a response, please try again later and contact the devs if this persists.'
