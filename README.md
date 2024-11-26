@@ -1,4 +1,4 @@
-# Skylar: Your Discord Egirl Companion!
+# Shoko Makinohara: Your anime companion!
 hi readme coming soon bye
 
-> Project SKLR by Xyrdron Pty Ltd
+> Project SHK by Xyrdron Pty Ltd

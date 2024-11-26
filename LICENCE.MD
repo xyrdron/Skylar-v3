@@ -1,11 +1,4 @@
-# Project SKLR Licence
-> [!CAUTION]
-> Complete Licence fields and remove this notice
-
-> [!IMPORTANT]
-> This is the current default licence
-> It allows users to modify the software/app but probhits distribution and commercial/production use
-> Remove this tag 
+# Project SHK Licence
 ## Xyrdron Pty Ltd
 
 **Version 1.0**

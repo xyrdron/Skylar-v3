@@ -54,11 +54,11 @@ class bottest(commands.Cog):
       embed = embeds.embedCreate(f'{percent}%', msg, discord.Color.pink())
       embed.set_image(url='attachment://ship.png') # type: ignore
 
-      await ctx.send(content=f'trixie ships you! :0\n{user1.mention}{user2.mention}', embed=embed, file=file)
+      await ctx.send(content=f'shoko ships you! :0\n{user1.mention}{user2.mention}', embed=embed, file=file)
       os.remove(unique_filename)
     except Exception as e:
       logging.error(f"An error occurred: {e}")
-      await ctx.send(f"An error occurred, If the problem persists report the bug on our [server](https://discord.gg/VU5GkWQmGp) or [github](https://github.com/xyrdron/MikuBOT/issues)")
+      await ctx.send(f"An error occurred, If the problem persists report the bug on our [server](https://discord.gg/VU5GkWQmGp) or [github](https://github.com/xyrdron/Shoko-Makinohara/issues)")
 
 def setup(client):
   return client.add_cog(bottest(client))

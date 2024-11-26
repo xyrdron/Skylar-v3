@@ -58,7 +58,7 @@ async def on_ready():
     # Presence
     try:
         logging.info(Fore.BLUE+'Setting presence')
-        await bot.change_presence(activity=discord.Game(name="hehe~"))
+        await bot.change_presence(activity=discord.Game(name="at the beach"))
         logging.info(Fore.GREEN+'Presence set')
     except Exception as e:
         logging.critical(Fore.RED+f'Failed to set presence {e}')
