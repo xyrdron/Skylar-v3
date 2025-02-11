@@ -1,4 +1,4 @@
-# Shoko Makinohara: Your anime companion!
+# Skylar: Your anime companion!
 hi readme coming soon bye
 
-> Project SHK by Xyrdron Pty Ltd
+> Project Skylar v3 by Xyrdron Pty Ltd
