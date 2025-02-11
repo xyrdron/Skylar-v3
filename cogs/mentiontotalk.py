@@ -43,8 +43,8 @@ class mentiontotalk(commands.Cog):
     return self.convo[id]
 
   def mentiontotalk(self, msg, user, id):
-    msg = msg.replace('<@1274306232488038452>', '')  # Main Bot
-    msg = msg.replace('<@1208732989803204618>', '')  # DevTest Bot
+    msg = msg.replace('<@1286462972469969028>', '')  # Main Bot
+    msg = msg.replace('<@1283276819038212136>', '')  # DevTest Bot (Feel free to change for your own devtest)
     msg = 'user:' + str(user) + ' msg:' + msg
 
     convo = self.appendMsg(msg, 'user', id)
@@ -99,10 +99,10 @@ class mentiontotalk(commands.Cog):
       del self.convocount[id]
       del self.convo[id]
 
-  @commands.hybrid_command(name="talk", description="Talk to Shoko using slash commands")
+  @commands.hybrid_command(name="talk", description="Talk to Skylar using slash commands")
   @app_commands.allowed_installs(guilds=True,users=True)
   @app_commands.allowed_contexts(guilds=True,dms=True,private_channels=True)
-  @app_commands.describe(message="The message you want to send to Shoko")
+  @app_commands.describe(message="The message you want to send to Skylar")
   async def talk(self,ctx,message: str):
     await ctx.defer() 
     await ctx.send(self.mentiontotalk(message, ctx.author,str(ctx.author.id)))
